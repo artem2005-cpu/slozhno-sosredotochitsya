@@ -5,8 +5,222 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
+	/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+	--font-family: 'IBM Plex Mono', sans-serif;
+	--background: #000028;
+	--basedColor: #ff0070;
+	--secondaryColor: #f1b2ce;
+	--markedColor: #db00ff;
+	.header-bg {
+		background-image: url(../images/cover-image-dark.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.rec p,
+	.call {
+		opacity: 100;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.rectangle {
+		width: 25px;
+		height: 25px;
+	}
+
+	.rectangle-first {
+		position: absolute;
+		margin-left: 36px;
+		border-top: 1px solid var(--basedColor);
+		border-right: 1px solid var(--basedColor);
+	}
+
+	.rec {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0px 9px 39px auto;
+	}
+
+	.rec p {
+		color: var(--basedColor);
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 139%;
+	}
+
+	.call {
+		width: 9px;
+		height: 9px;
+		border-radius: 100%;
+		box-shadow: 0 0 4px 2px var(--basedColor);
+		fill: var(--basedColor);
+		background-color: var(--basedColor);
+	}
+
+	.header__theme-menu {
+		margin-left: auto;
+	}
+
+	.header__theme-menu-item {
+		min-width: 70px;
+		min-height: 26px;
+		padding: 0px 13px;
+	}
+
+	.header__theme-menu-button {
+		border: none;
+		color: var(--basedColor);
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 100%;
+		text-transform: lowercase;
+		background-color: transparent;
+	}
+
+	.header__theme-menu-button_active {
+		border: 1px solid var(--basedColor);
+	}
+
+	.title {
+		margin-top: 65px;
+	}
+
+	.title h1 {
+		color: var(--markedColor);
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 116px;
+		line-height: 83%;
+		text-shadow: 4px 4px var(--basedColor);
+	}
+
+	.text {
+		margin-top: 55px;
+		background: var(--basedColor);
+	}
+
+	.text p {
+		color: var(--background);
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.rectangle-second {
+		margin-top: 31px;
+		border-bottom: 1px solid var(--basedColor);
+		border-left: 1px solid var(--basedColor);
+	}
+
+	.section {
+		margin: 50px 10px 0px;
+	}
+
+	.section1 {
+		margin: 40px 10px 0px;
+	}
+
+	.title2 h2 {
+		color: var(--basedColor);
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.zag {
+		margin: 20px 0px 10px;
+		background: var(--basedColor);
+	}
+
+	.zag2 {
+		margin-bottom: 0px;
+	}
+
+	.zag h2 {
+		color: var(--background);
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.section p {
+		color: var(--secondaryColor);
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.section span {
+		text-shadow: 2px 2px var(--basedColor);
+	}
+
+	.title3 {
+		margin: 20px 0px 10px;
+		background: var(--basedColor);
+	}
+
+	.title3 h3 {
+		color: var(--background);
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.zag3 {
+		margin-top: 50px;
+	}
+
+	.gallery {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.gallery:last-child {
+		margin-bottom: 50px;
+	}
+
+	.footer {
+		margin: 0px 10px 10px;
+	}
+
+	.rectangle-third {
+		margin-left: auto;
+		border-top: 1px solid var(--basedColor);
+		border-right: 1px solid var(--basedColor);
+	}
+
+	.title h2 {
+		margin: 251px 0px 250px;
+		color: var(--markedColor);
+		font-family: var(--font-family);
+		font-weight: 700;
+		font-size: 116px;
+		line-height: 83%;
+		text-shadow: 2px 2px var(--basedColor);
+	}
+
+	.rectangle-fourth {
+		margin-top: 31px;
+		border-bottom: 1px solid var(--basedColor);
+		border-left: 1px solid var(--basedColor);
+	}
 }

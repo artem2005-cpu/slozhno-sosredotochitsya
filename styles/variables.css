@@ -5,4 +5,8 @@
 
 :root {
 	--font-family: 'IBM Plex Mono', sans-serif;
+	--background: #000028;
+	--basedColor: #ff0070;
+	--secondaryColor: #f1b2ce;
+	--markedColor: #db00ff;
 }

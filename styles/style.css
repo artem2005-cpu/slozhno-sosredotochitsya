@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #000028;
+	background: var(--background);
 }
 
 .header-bg {
@@ -30,8 +30,8 @@ body {
 .rectangle-first {
 	position: absolute;
 	margin-left: 36px;
-	border-top: 1px solid #ff0070;
-	border-right: 1px solid #ff0070;
+	border-top: 1px solid var(--basedColor);
+	border-right: 1px solid var(--basedColor);
 }
 
 .rec {
@@ -42,7 +42,7 @@ body {
 }
 
 .rec p {
-	color: #ff0070;
+	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -53,9 +53,9 @@ body {
 	width: 9px;
 	height: 9px;
 	border-radius: 100%;
-	box-shadow: 0 0 4px 2px #ff0070;
-	fill: #ff0070;
-	background-color: #ff0070;
+	box-shadow: 0 0 4px 2px var(--basedColor);
+	fill: var(--basedColor);
+	background-color: var(--basedColor);
 }
 
 .header__theme-menu {
@@ -70,7 +70,7 @@ body {
 
 .header__theme-menu-button {
 	border: none;
-	color: #ff0070;
+	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -80,7 +80,7 @@ body {
 }
 
 .header__theme-menu-button_active {
-	border: 1px solid #ff0070;
+	border: 1px solid var(--basedColor);
 }
 
 .title {
@@ -88,21 +88,21 @@ body {
 }
 
 .title h1 {
-	color: #db00ff;
+	color: var(--markedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 116px;
 	line-height: 83%;
-	text-shadow: 4px 4px #ff0070;
+	text-shadow: 4px 4px var(--basedColor);
 }
 
 .text {
 	margin-top: 55px;
-	background: #ff0070;
+	background: var(--basedColor);
 }
 
 .text p {
-	color: #000028;
+	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -111,8 +111,8 @@ body {
 
 .rectangle-second {
 	margin-top: 31px;
-	border-bottom: 1px solid #ff0070;
-	border-left: 1px solid #ff0070;
+	border-bottom: 1px solid var(--basedColor);
+	border-left: 1px solid var(--basedColor);
 }
 
 .section {
@@ -124,7 +124,7 @@ body {
 }
 
 .title2 h2 {
-	color: #ff0070;
+	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -133,7 +133,7 @@ body {
 
 .zag {
 	margin: 20px 0px 10px;
-	background: #ff0070;
+	background: var(--basedColor);
 }
 
 .zag2 {
@@ -141,7 +141,7 @@ body {
 }
 
 .zag h2 {
-	color: #000028;
+	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -149,7 +149,7 @@ body {
 }
 
 .section p {
-	color: #f1b2ce;
+	color: var(--secondaryColor);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -157,16 +157,16 @@ body {
 }
 
 .section span {
-	text-shadow: 2px 2px #ff0070;
+	text-shadow: 2px 2px var(--basedColor);
 }
 
 .title3 {
 	margin: 20px 0px 10px;
-	background: #ff0070;
+	background: var(--basedColor);
 }
 
 .title3 h3 {
-	color: #000028;
+	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -188,27 +188,27 @@ body {
 }
 
 .footer {
-	margin: 0px 10px;
+	margin: 0px 10px 10px;
 }
 
 .rectangle-third {
 	margin-left: auto;
-	border-top: 1px solid #ff0070;
-	border-right: 1px solid #ff0070;
+	border-top: 1px solid var(--basedColor);
+	border-right: 1px solid var(--basedColor);
 }
 
 .title h2 {
 	margin: 251px 0px 250px;
-	color: #db00ff;
+	color: var(--markedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 116px;
 	line-height: 83%;
-	text-shadow: 2px 2px #ff0070;
+	text-shadow: 2px 2px var(--basedColor);
 }
 
 .rectangle-fourth {
 	margin-top: 31px;
-	border-bottom: 1px solid #ff0070;
-	border-left: 1px solid #ff0070;
+	border-bottom: 1px solid var(--basedColor);
+	border-left: 1px solid var(--basedColor);
 }
