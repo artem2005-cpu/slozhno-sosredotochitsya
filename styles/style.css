@@ -1,11 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-	color: var(--based-text-color);
-	font-family: 'IBM Plex mono';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 100%;
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	background-image: url(../images/cover-image-dark.png);
 	background-repeat: no-repeat;
@@ -14,24 +9,137 @@
 	background-attachment: fixed;
 }
 
-.header__theme-menu-list {
+.header {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.rectangle-first {
+	position: absolute;
+	width: 25px;
+	height: 24px;
+	margin-left: 36px;
+	border-top: 1px solid #ff0070;
+	border-right: 1px solid #ff0070;
+}
+
+.rec {
+	display: flex;
+	align-items: center;
 	gap: 10px;
-	margin-top: 20px;
+	margin: 0px 9px 39px auto;
+}
+
+.rec p {
+	color: #ff0070;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 139%;
+}
+
+.call {
+	width: 9px;
+	height: 9px;
+	border-radius: 100%;
+	box-shadow: 0 0 4px 2px #ff0070;
+	fill: #ff0070;
+	background-color: #ff0070;
+}
+
+.header__theme-menu {
+	margin-left: auto;
+}
+
+.header__theme-menu-item {
+	min-width: 70px;
+	min-height: 26px;
+	padding: 0px 13px;
 }
 
 .header__theme-menu-button {
 	border: none;
+	color: #ff0070;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
 	text-transform: lowercase;
 	background-color: transparent;
 }
 
-.header__theme-menu-button:hover {
-	cursor: pointer;
+.header__theme-menu-button_active {
+	border: 1px solid #ff0070;
 }
 
-.header__theme-menu-button_active {
-	border: 1px;
-	border-color: var(--based-text-color);
+.title {
+	margin-top: 65px;
+}
+
+.title h1 {
+	color: #db00ff;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 116px;
+	line-height: 83%;
+	text-shadow: 4px 4px #ff0070;
+}
+
+.text {
+	margin-top: 55px;
+	background: #ff0070;
+}
+
+.text p {
+	color: #000028;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.rectangle-second {
+	width: 25px;
+	height: 25px;
+	margin-top: 31px;
+	border-bottom: 1px solid #ff0070;
+	border-left: 1px solid #ff0070;
+}
+
+.section {
+	margin: 40px 10px;
+}
+
+.title2 {
+	color: #ff0070;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.zag {
+	margin: 20px 0px 10px;
+	background: #ff0070;
+}
+
+.zag h2 {
+	color: #000028;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.section p {
+	color: #f1b2ce;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.section span {
+	text-shadow: 2px 2px #ff0070;
 }
