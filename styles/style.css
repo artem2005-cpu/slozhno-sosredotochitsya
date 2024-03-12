@@ -110,8 +110,8 @@ body {
 
 .text {
 	margin-top: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
-	background: #ff0070;
 	margin-left: clamp(0rem, -22.9008rem + 97.7099vw, 24rem);
+	background: #ff0070;
 }
 
 .text p {
