@@ -182,14 +182,6 @@
 		outline-style: none;
 	}
 
-	.header-bg {
-		background-image: url(../images/cover-image-dark.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
 	.header {
 		display: flex;
 		flex-direction: column;
