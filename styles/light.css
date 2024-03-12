@@ -17,16 +17,25 @@
 		background-image: url(../images/cover-image-light.png);
 	}
 
+	a:hover {
+		border-bottom: 1px solid var(--secondaryColor);
+	}
+
+	a:focus {
+		border: 1px solid var(--secondaryColor);
+		outline-style: none;
+	}
+
 	.rectangle-first,
 	.rectangle-third {
-		border-top: 1px solid #353430;
-		border-right: 1px solid #353430;
+		border-top: 1px solid var(--secondaryColor);
+		border-right: 1px solid var(--secondaryColor);
 	}
 
 	.rectangle-second,
 	.rectangle-fourth {
-		border-bottom: 1px solid #353430;
-		border-left: 1px solid #353430;
+		border-bottom: 1px solid var(--secondaryColor);
+		border-left: 1px solid var(--secondaryColor);
 	}
 
 	.rec p,
@@ -35,27 +44,36 @@
 	}
 
 	.header__theme-menu-button {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.header__theme-menu-button_active {
-		border: 1px solid #353430;
+		border: 1px solid var(--secondaryColor);
+	}
+
+	.header__theme-menu-button:hover {
+		border: 1px solid rgba(50, 49, 45, 0.4);
+	}
+
+	.header__theme-menu-button:focus {
+		border-bottom: 1px solid var(--secondaryColor);
+		outline-style: none;
 	}
 
 	.text p {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.title2 h2 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.zag h2 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.title3 h3 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 }
 
@@ -70,20 +88,29 @@
 		background: var(--background);
 	}
 
+	a:hover {
+		border-bottom: 1px solid var(--secondaryColor);
+	}
+
+	a:focus {
+		border: 1px solid var(--secondaryColor);
+		outline-style: none;
+	}
+
 	.header-bg {
 		background-image: url(../images/cover-image-light.png);
 	}
 
 	.rectangle-first,
 	.rectangle-third {
-		border-top: 1px solid #353430;
-		border-right: 1px solid #353430;
+		border-top: 1px solid var(--secondaryColor);
+		border-right: 1px solid var(--secondaryColor);
 	}
 
 	.rectangle-second,
 	.rectangle-fourth {
-		border-bottom: 1px solid #353430;
-		border-left: 1px solid #353430;
+		border-bottom: 1px solid var(--secondaryColor);
+		border-left: 1px solid var(--secondaryColor);
 	}
 
 	.rec p,
@@ -92,26 +119,35 @@
 	}
 
 	.header__theme-menu-button {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.header__theme-menu-button_active {
-		border: 1px solid #353430;
+		border: 1px solid var(--secondaryColor);
+	}
+
+	.header__theme-menu-button:hover {
+		border: 1px solid rgba(50, 49, 45, 0.4);
+	}
+
+	.header__theme-menu-button:focus {
+		border-bottom: 1px solid var(--secondaryColor);
+		outline-style: none;
 	}
 
 	.text p {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.title2 h2 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.zag h2 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 
 	.title3 h3 {
-		color: #353430;
+		color: var(--secondaryColor);
 	}
 }
