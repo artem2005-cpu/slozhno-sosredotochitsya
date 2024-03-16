@@ -47,9 +47,12 @@ a:focus {
 	height: 25px;
 }
 
-.rectangle-first {
+.header::before {
+	content: '';
+	width: 25px;
+	margin-left: 330px;
 	position: absolute;
-	margin-left: 36px;
+	height: 25px;
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
 }
@@ -69,7 +72,8 @@ a:focus {
 	line-height: 139%;
 }
 
-.call {
+.rec::after {
+	content: '';
 	width: 9px;
 	height: 9px;
 	border-radius: 100%;
@@ -146,7 +150,10 @@ a:focus {
 	line-height: 130%;
 }
 
-.rectangle-second {
+.header::after {
+	content: '';
+	width: 25px;
+	height: 25px;
 	margin-top: clamp(1.9375rem, -4.4437rem + 27.2265vw, 8.625rem);
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
@@ -156,7 +163,7 @@ a:focus {
 	margin: 50px 10px 0px;
 }
 
-.section1 {
+.sectionWhy {
 	margin: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem) 10px 0px;
 }
 
@@ -168,16 +175,17 @@ a:focus {
 	line-height: 130%;
 }
 
-.zag {
+.card-title {
 	margin: 20px 0px 10px;
 	background: var(--basedColor);
 }
 
-.zag2 {
+.card-title-simple {
 	margin-bottom: 0px;
 }
 
-.zag h2 {
+.card-title h2,
+.card-title h3 {
 	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 700;
@@ -193,7 +201,7 @@ a:focus {
 	line-height: 130%;
 }
 
-.section span {
+.section a {
 	text-shadow: 2px 2px var(--basedColor);
 }
 
@@ -202,7 +210,7 @@ a:focus {
 	background: var(--basedColor);
 }
 
-.title3 h3 {
+.title3 h4 {
 	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -210,7 +218,7 @@ a:focus {
 	line-height: 130%;
 }
 
-.zag3 {
+.card-title-gallery {
 	margin-top: 50px;
 }
 
@@ -232,14 +240,18 @@ a:focus {
 	margin: 0px 10px;
 }
 
-.rectangle-third {
-	margin-left: auto;
+.sectionGallery::after {
+	content: '';
+	width: 25px;
+	position: absolute;
+	margin-left: 330px;
+	height: 25px;
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
 }
 
 .title4 {
-	margin-top: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
+	margin-top: 326px;
 	margin-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
 	margin-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
 	margin-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
@@ -255,6 +267,16 @@ a:focus {
 	text-shadow: 2px 2px var(--basedColor);
 }
 
+.title4::after {
+	content: '';
+	width: 25px;
+	position: absolute;
+	margin-top: 250px;
+	height: 25px;
+	border-bottom: 1px solid var(--basedColor);
+	border-left: 1px solid var(--basedColor);
+}
+
 .rectangle-fourth {
 	margin-top: 31px;
 	margin-bottom: 10px;
@@ -266,13 +288,13 @@ a:focus {
 	.header {
 		padding: 20px;
 	}
-	.section1 {
+	.sectionWhy {
 		margin: 60px 20px 0px;
 	}
 
-	.section2,
-	.section3,
-	.section4 {
+	.sectionWhat,
+	.sectionHow,
+	.sectionGallery {
 		margin: 80px 20px 0px;
 	}
 	.title {
@@ -293,13 +315,13 @@ a:focus {
 		margin-top: clamp(5.5625rem, 17.8125rem + -19.1406vw, 8.625rem);
 	}
 
-	.section1,
-	.section3 {
+	.sectionWhy,
+	.sectionHow {
 		display: grid;
 		grid-template-columns: 35% 65%;
 	}
 
-	.zag:first-child {
+	.card-title:first-child {
 		margin-top: 0;
 	}
 
@@ -311,7 +333,7 @@ a:focus {
 		width: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem);
 	}
 
-	.zag3 {
+	.card-title-gallery {
 		margin-bottom: 20px;
 	}
 
@@ -399,7 +421,7 @@ a:focus {
 		font-size: 157px;
 	}
 
-	.section3 {
+	.sectionHow {
 		grid-template-columns: 1fr 2fr;
 	}
 
