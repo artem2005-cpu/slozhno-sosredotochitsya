@@ -2,10 +2,14 @@
 
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+	background-image: url(../images/cover-image-dark.png);
+	background-position: center;
+	background-size: cover;
 	background-attachment: fixed;
 }
 
-body {
+main,
+footer {
 	background: var(--background);
 }
 
@@ -20,14 +24,6 @@ a:hover {
 a:focus {
 	border: 1px solid var(--secondaryColor);
 	outline-style: none;
-}
-
-.header-bg {
-	background-image: url(../images/cover-image-dark.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 .header {
@@ -233,11 +229,11 @@ a:focus {
 }
 
 .gallery:last-child {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .footer {
-	margin: 0px 10px;
+	padding: 0px 10px;
 }
 
 .sectionGallery::after {
@@ -251,10 +247,10 @@ a:focus {
 }
 
 .title4 {
-	margin-top: 326px;
-	margin-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
-	margin-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
-	margin-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
+	padding-top: 326px;
+	padding-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
+	padding-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
+	padding-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
 }
 
 .title4 h2 {
