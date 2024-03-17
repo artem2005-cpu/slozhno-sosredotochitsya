@@ -248,14 +248,7 @@ a:focus {
 	border-right: 1px solid var(--basedColor);
 }
 
-.title4 {
-	padding-top: 276px;
-	padding-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
-	padding-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
-	padding-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
-}
-
-.title4 h2 {
+.footer h2 {
 	margin: auto;
 	color: var(--markedColor);
 	font-family: var(--font-family);
@@ -263,9 +256,13 @@ a:focus {
 	font-size: 116px;
 	line-height: 83%;
 	text-shadow: 2px 2px var(--basedColor);
+	padding-top: 276px;
+	padding-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
+	padding-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
+	padding-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
 }
 
-.title4::after {
+.footer::after {
 	content: '';
 	position: absolute;
 	width: 25px;
@@ -390,7 +387,7 @@ a:focus {
 		margin: 0px 20px;
 	}
 
-	.title4 {
+	.footer {
 		margin-top: clamp(17.125rem, 53.125rem + -56.25vw, 26.125rem);
 		margin-right: clamp(12.125rem, -1.5625rem + 28.5156vw, 16.6875rem);
 		margin-bottom: clamp(17.125rem, 53.125rem + -56.25vw, 26.125rem);
@@ -423,7 +420,7 @@ a:focus {
 		grid-template-columns: 1fr 2fr;
 	}
 
-	.title4 h2 {
+	.footer h2 {
 		font-size: 157px;
 	}
 }
