@@ -267,7 +267,6 @@ a:focus {
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	margin-top: 250px;
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
 }
