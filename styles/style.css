@@ -38,11 +38,6 @@ a:focus {
 	gap: clamp(2.4375rem, -3.9437rem + 27.2265vw, 9.125rem);
 }
 
-.rectangle {
-	width: 25px;
-	height: 25px;
-}
-
 .header::before {
 	content: '';
 	position: absolute;
@@ -235,7 +230,8 @@ a:focus {
 }
 
 .footer {
-	padding: 10px;
+	padding: 285px 14px;
+	position: relative;
 }
 
 .sectionGallery::after {
@@ -246,6 +242,8 @@ a:focus {
 	margin-left: 330px;
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
+	z-index: 2;
+	margin-top: 10px;
 }
 
 .footer h2 {
@@ -264,13 +262,7 @@ a:focus {
 	height: 25px;
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
-}
-
-.rectangle-fourth {
-	margin-top: 31px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid var(--basedColor);
-	border-left: 1px solid var(--basedColor);
+	margin-top: 247px;
 }
 
 @media (width >= 768px) {
@@ -298,10 +290,6 @@ a:focus {
 	.text {
 		margin-top: clamp(7.125rem, 19.125rem + -18.75vw, 10.125rem);
 		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
-	}
-
-	.rectangle-second {
-		margin-top: clamp(5.5625rem, 17.8125rem + -19.1406vw, 8.625rem);
 	}
 
 	.sectionWhy,
