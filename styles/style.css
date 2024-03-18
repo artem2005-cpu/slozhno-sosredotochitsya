@@ -158,11 +158,11 @@ a:focus {
 }
 
 .section {
-	margin: 50px 10px 0px;
+	padding: 50px 10px 0px;
 }
 
 .sectionWhy {
-	margin: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem) 10px 0px;
+	padding-top: 40px;
 }
 
 .title2 h2 {
@@ -217,7 +217,7 @@ a:focus {
 }
 
 .card-title-gallery {
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 .gallery {
@@ -231,11 +231,11 @@ a:focus {
 }
 
 .gallery:last-child {
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .footer {
-	padding: 0px 10px;
+	padding: 10px;
 }
 
 .sectionGallery::after {
@@ -249,17 +249,12 @@ a:focus {
 }
 
 .footer h2 {
-	margin: auto;
 	color: var(--markedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 116px;
 	line-height: 83%;
 	text-shadow: 2px 2px var(--basedColor);
-	padding-top: 276px;
-	padding-right: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
-	padding-bottom: clamp(15.6875rem, 5.7281rem + 42.4936vw, 26.125rem);
-	padding-left: clamp(0rem, -11.5697rem + 49.3639vw, 12.125rem);
 }
 
 .footer::after {
