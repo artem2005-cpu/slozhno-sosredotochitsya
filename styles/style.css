@@ -29,7 +29,7 @@ a:focus {
 .header {
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .nav {
@@ -38,11 +38,10 @@ a:focus {
 	gap: clamp(2.4375rem, -3.9437rem + 27.2265vw, 9.125rem);
 }
 
-.header::before {
+.rec::before {
 	content: '';
-	position: absolute;
-	top: 8px;
-	left: 340px;
+	position: fixed;
+	left: clamp(21.25rem, -1.8625rem + 98.6133vw, 61.25rem);
 	width: 25px;
 	height: 25px;
 	border-top: 1px solid var(--basedColor);
@@ -87,7 +86,7 @@ a:focus {
 .header__theme-menu-item {
 	min-width: 70px;
 	min-height: 26px;
-	padding: 0px 13px;
+	padding: 1.5px 13px;
 }
 
 .header__theme-menu-button {
@@ -117,21 +116,22 @@ a:focus {
 }
 
 .title {
-	margin-top: clamp(4.0625rem, -2.3783rem + 27.4809vw, 10.8125rem);
+	margin-top: clamp(4.0625rem, -3.4491rem + 32.0493vw, 17.0625rem);
+	margin-left: clamp(-1.25rem, 1.1927rem + -5.0891vw, 0rem);
 }
 
 .title h1 {
 	color: var(--markedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
-	font-size: 116px;
+	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
 	text-shadow: 4px 4px var(--basedColor);
 }
 
 .text {
 	margin-top: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
-	margin-left: clamp(0rem, -22.9008rem + 97.7099vw, 24rem);
+	margin-left: clamp(0rem, -18.5261rem + 79.0447vw, 32.0625rem);
 	background: var(--basedColor);
 }
 
@@ -266,48 +266,14 @@ a:focus {
 }
 
 @media (width >= 768px) {
-	.header {
-		padding: 20px;
-	}
-	.sectionWhy {
-		margin: 60px 20px 0px;
-	}
-
-	.sectionWhat,
-	.sectionHow,
-	.sectionGallery {
-		margin: 80px 20px 0px;
-	}
-	.title {
-		margin-top: clamp(10.8125rem, -7.9375rem + 39.0625vw, 17.0625rem);
-		margin-left: -20px;
-	}
-
-	.title h1 {
-		font-size: 120px;
-	}
-
-	.text {
-		margin-top: clamp(7.125rem, 19.125rem + -18.75vw, 10.125rem);
-		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
-	}
-
 	.sectionWhy,
 	.sectionHow {
 		display: grid;
 		grid-template-columns: 35% 65%;
 	}
 
-	.card-title:first-child {
-		margin-top: 0;
-	}
-
 	.grid_component {
 		margin-top: 20px;
-	}
-
-	.title2 {
-		width: clamp(14.75rem, -0.0625rem + 30.8594vw, 19.6875rem);
 	}
 
 	.card-title-gallery {
