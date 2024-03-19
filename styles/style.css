@@ -154,6 +154,7 @@ a:focus {
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
 	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	bottom: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
 	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
@@ -164,7 +165,7 @@ a:focus {
 }
 
 .sectionWhy {
-	padding-top: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+	padding-top: clamp(1.875rem, 1.2786rem + 2.5445vw, 2.5rem);
 }
 
 .title2 h2 {
@@ -234,6 +235,10 @@ a:focus {
 	gap: 5px;
 }
 
+.sectionGallery {
+	padding-top: clamp(1.875rem, -1.1069rem + 12.7226vw, 5rem);
+}
+
 .gallery_item {
 	width: 100%;
 }
@@ -243,9 +248,11 @@ a:focus {
 }
 
 .footer {
-	padding: clamp(17.8125rem, 7.2567rem + 45.0382vw, 28.875rem)
-		clamp(0.875rem, -10.5157rem + 48.6005vw, 12.8125rem);
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 668px;
 }
 
 .footer::before {
@@ -384,7 +391,7 @@ a:focus {
 	}
 	.nav {
 		flex-direction: row-reverse;
-		gap: clamp(9.125rem, -22.75rem + 66.4063vw, 19.75rem);
+		gap: clamp(19.75rem, -3.8855rem + 36.9305vw, 29.375rem);
 	}
 	.grid {
 		display: grid;
@@ -398,9 +405,5 @@ a:focus {
 
 	.sectionHow {
 		grid-template-columns: 1fr 2fr;
-	}
-
-	.footer h2 {
-		font-size: 157px;
 	}
 }
