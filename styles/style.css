@@ -30,6 +30,7 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	position: relative;
 }
 
 .nav {
@@ -41,7 +42,8 @@ a:focus {
 .rec::before {
 	content: '';
 	position: absolute;
-	left: clamp(21.25rem, -1.8625rem + 98.6133vw, 61.25rem);
+	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
 	border-top: 1px solid var(--basedColor);
@@ -133,6 +135,7 @@ a:focus {
 	margin-top: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
 	margin-left: clamp(0rem, -21.708rem + 92.6209vw, 22.75rem);
 	background: var(--basedColor);
+	margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
 }
 
 .text p {
@@ -146,10 +149,12 @@ a:focus {
 .header::after {
 	content: '';
 	width: 25px;
+	position: absolute;
 	height: 25px;
-	margin-top: clamp(1.9375rem, -4.4437rem + 27.2265vw, 8.625rem);
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
+	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .section {
@@ -251,7 +256,6 @@ a:focus {
 	margin-left: 330px;
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
-	z-index: 2;
 	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
@@ -292,6 +296,7 @@ a:focus {
 	.text {
 		margin-top: clamp(7.125rem, 19.125rem + -18.75vw, 10.125rem);
 		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
+		margin-bottom: clamp(8.25rem, 21rem + -19.9219vw, 11.4375rem);
 	}
 
 	.header::after {
