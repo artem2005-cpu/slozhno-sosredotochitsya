@@ -27,10 +27,10 @@ a:focus {
 }
 
 .header {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	position: relative;
 }
 
 .nav {
@@ -85,14 +85,11 @@ a:focus {
 	gap: 10px;
 }
 
-.header__theme-menu-item {
+.header__theme-menu-button {
 	min-width: 70px;
 	min-height: 26px;
-	padding: 1.5px 13px;
-}
-
-.header__theme-menu-button {
 	border: none;
+	padding: 0px 13px;
 	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -133,9 +130,9 @@ a:focus {
 
 .text {
 	margin-top: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
+	margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
 	margin-left: clamp(0rem, -21.708rem + 92.6209vw, 22.75rem);
 	background: var(--basedColor);
-	margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
 }
 
 .text p {
@@ -148,20 +145,20 @@ a:focus {
 
 .header::after {
 	content: '';
-	width: 25px;
 	position: absolute;
-	height: 25px;
-	border-bottom: 1px solid var(--basedColor);
-	border-left: 1px solid var(--basedColor);
 	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	bottom: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
 	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	width: 25px;
+	height: 25px;
+	border-bottom: 1px solid var(--basedColor);
+	border-left: 1px solid var(--basedColor);
 }
 
 .section {
 	padding-top: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
-	padding-left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	padding-right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	padding-left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .sectionWhy {
@@ -177,9 +174,9 @@ a:focus {
 }
 
 .card-title {
+	margin-top: 20px;
 	margin-bottom: 10px;
 	background: var(--basedColor);
-	margin-top: 20px;
 }
 
 .card-title:first-child {
@@ -250,21 +247,21 @@ a:focus {
 .footer {
 	position: relative;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	min-height: 668px;
 }
 
 .footer::before {
 	content: '';
 	position: absolute;
+	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
 	margin-left: 330px;
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
-	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .footer h2 {
@@ -279,12 +276,12 @@ a:focus {
 .footer::after {
 	content: '';
 	position: absolute;
+	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
-	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 @media (width >= 768px) {
@@ -302,8 +299,8 @@ a:focus {
 
 	.text {
 		margin-top: clamp(7.125rem, 19.125rem + -18.75vw, 10.125rem);
-		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
 		margin-bottom: clamp(8.25rem, 21rem + -19.9219vw, 11.4375rem);
+		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
 	}
 
 	.header::after {
