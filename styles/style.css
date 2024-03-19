@@ -40,7 +40,7 @@ a:focus {
 
 .rec::before {
 	content: '';
-	position: fixed;
+	position: absolute;
 	left: clamp(21.25rem, -1.8625rem + 98.6133vw, 61.25rem);
 	width: 25px;
 	height: 25px;
@@ -153,11 +153,13 @@ a:focus {
 }
 
 .section {
-	padding: 50px 10px 0px;
+	padding-top: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
+	padding-left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	padding-right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .sectionWhy {
-	padding-top: 40px;
+	padding-top: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .title2 h2 {
@@ -169,8 +171,9 @@ a:focus {
 }
 
 .card-title {
-	margin: 20px 0px 10px;
+	margin-bottom: 10px;
 	background: var(--basedColor);
+	margin-top: clamp(0rem, 2.4427rem + -5.0891vw, 1.25rem);
 }
 
 .card-title-simple {
@@ -226,11 +229,12 @@ a:focus {
 }
 
 .gallery:last-child {
-	padding-bottom: 40px;
+	padding-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .footer {
-	padding: 285px 14px;
+	padding: clamp(17.8125rem, 7.2567rem + 45.0382vw, 28.875rem)
+		clamp(0.875rem, -10.5157rem + 48.6005vw, 12.8125rem);
 	position: relative;
 }
 
@@ -348,19 +352,9 @@ a:focus {
 		grid-row-end: 5;
 	}
 
-	.gallery:last-child {
-		margin-bottom: 80px;
-	}
-
 	.footer {
-		margin: 0px 20px;
-	}
-
-	.footer {
-		margin-top: clamp(17.125rem, 53.125rem + -56.25vw, 26.125rem);
-		margin-right: clamp(12.125rem, -1.5625rem + 28.5156vw, 16.6875rem);
-		margin-bottom: clamp(17.125rem, 53.125rem + -56.25vw, 26.125rem);
-		margin-left: clamp(12.125rem, -1.5625rem + 28.5156vw, 16.6875rem);
+		padding: clamp(20rem, 55.5rem + -55.4688vw, 28.875rem)
+			clamp(12.8125rem, -0.5rem + 27.7344vw, 17.25rem);
 	}
 }
 
