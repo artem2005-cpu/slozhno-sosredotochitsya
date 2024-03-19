@@ -24,7 +24,7 @@
 		outline-style: none;
 	}
 
-	.rec::before,
+	.nav::before,
 	.footer::before {
 		border-top: 1px solid var(--basedColor);
 		border-right: 1px solid var(--basedColor);
@@ -36,7 +36,7 @@
 		border-left: 1px solid var(--basedColor);
 	}
 
-	.rec p,
+	.rec,
 	.rec::after {
 		opacity: 100;
 	}

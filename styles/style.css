@@ -39,7 +39,7 @@ a:focus {
 	gap: clamp(2.4375rem, -3.9437rem + 27.2265vw, 9.125rem);
 }
 
-.rec::before {
+.nav::before {
 	content: '';
 	position: absolute;
 	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
@@ -57,7 +57,7 @@ a:focus {
 	margin: 0px 9px 0px auto;
 }
 
-.rec p {
+.rec {
 	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 400;
@@ -146,7 +146,6 @@ a:focus {
 .header::after {
 	content: '';
 	position: absolute;
-	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	bottom: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
 	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;

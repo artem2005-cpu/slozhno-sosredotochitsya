@@ -24,7 +24,7 @@
 		outline-style: none;
 	}
 
-	.rec::before,
+	.nav::before,
 	.footer::before {
 		border-top: 1px solid var(--secondaryColor);
 		border-right: 1px solid var(--secondaryColor);
@@ -36,8 +36,7 @@
 		border-left: 1px solid var(--secondaryColor);
 	}
 
-	.rec p,
-	.rec::after {
+	.rec {
 		opacity: 0;
 	}
 
@@ -96,7 +95,7 @@
 		outline-style: none;
 	}
 
-	.rec::before,
+	.nav::before,
 	.footer::before {
 		border-top: 1px solid var(--secondaryColor);
 		border-right: 1px solid var(--secondaryColor);
@@ -108,8 +107,7 @@
 		border-left: 1px solid var(--secondaryColor);
 	}
 
-	.rec p,
-	.rec::after {
+	.rec {
 		opacity: 0;
 	}
 
