@@ -243,7 +243,7 @@ a:focus {
 	position: relative;
 }
 
-.sectionGallery::after {
+.footer::before {
 	content: '';
 	position: absolute;
 	width: 25px;
@@ -252,7 +252,8 @@ a:focus {
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
 	z-index: 2;
-	margin-top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .footer h2 {
@@ -271,7 +272,8 @@ a:focus {
 	height: 25px;
 	border-bottom: 1px solid var(--basedColor);
 	border-left: 1px solid var(--basedColor);
-	margin-top: 247px;
+	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 @media (width >= 768px) {
