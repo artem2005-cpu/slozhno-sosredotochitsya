@@ -247,14 +247,14 @@ a:focus {
 	border-top: 1px solid var(--basedColor);
 	border-right: 1px solid var(--basedColor);
 	z-index: 2;
-	margin-top: 10px;
+	margin-top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .footer h2 {
 	color: var(--markedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
-	font-size: 116px;
+	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
 	text-shadow: 2px 2px var(--basedColor);
 }
@@ -355,6 +355,10 @@ a:focus {
 	.footer {
 		padding: clamp(20rem, 55.5rem + -55.4688vw, 28.875rem)
 			clamp(12.8125rem, -0.5rem + 27.7344vw, 17.25rem);
+	}
+
+	.footer h2 {
+		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	}
 }
 
