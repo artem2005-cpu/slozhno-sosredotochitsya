@@ -24,14 +24,12 @@
 		outline-style: none;
 	}
 
-	.nav::before,
-	.footer::before {
+	.decorated-zone::before {
 		border-top: 1px solid var(--secondaryColor);
 		border-right: 1px solid var(--secondaryColor);
 	}
 
-	.header::after,
-	.footer::after {
+	.decorated-zone::after {
 		border-bottom: 1px solid var(--secondaryColor);
 		border-left: 1px solid var(--secondaryColor);
 	}
@@ -61,7 +59,7 @@
 		color: var(--secondaryColor);
 	}
 
-	.title2 h2 {
+	.section h2 {
 		color: var(--secondaryColor);
 	}
 
@@ -70,7 +68,7 @@
 		color: var(--secondaryColor);
 	}
 
-	.title3 h4 {
+	h4 {
 		color: var(--secondaryColor);
 	}
 }
@@ -95,14 +93,12 @@
 		outline-style: none;
 	}
 
-	.nav::before,
-	.footer::before {
+	.decorated-zone::before {
 		border-top: 1px solid var(--secondaryColor);
 		border-right: 1px solid var(--secondaryColor);
 	}
 
-	.header::after,
-	.footer::after {
+	.decorated-zone::after {
 		border-bottom: 1px solid var(--secondaryColor);
 		border-left: 1px solid var(--secondaryColor);
 	}

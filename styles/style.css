@@ -10,7 +10,7 @@
 
 main,
 footer {
-	background: var(--background);
+	background-color: var(--background);
 }
 
 a {
@@ -41,7 +41,7 @@ a:focus {
 	gap: clamp(2.4375rem, -3.9437rem + 27.2265vw, 9.125rem);
 }
 
-.nav::before {
+.decorated-zone::before {
 	content: '';
 	position: absolute;
 	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
@@ -142,7 +142,7 @@ a:focus {
 	line-height: 130%;
 }
 
-.header::after {
+.decorated-zone::after {
 	content: '';
 	position: absolute;
 	bottom: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
@@ -159,11 +159,11 @@ a:focus {
 	padding-left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
-.sectionWhy {
+.section:has(h2.another-margin-top) {
 	padding-top: clamp(1.875rem, 1.2786rem + 2.5445vw, 2.5rem);
 }
 
-.title2 h2 {
+.section h2 {
 	color: var(--basedColor);
 	font-family: var(--font-family);
 	font-weight: 700;
@@ -173,14 +173,13 @@ a:focus {
 
 .card-title h3 {
 	margin-top: 20px;
-	background: var(--basedColor);
 }
 
 .main p {
 	margin-top: 10px;
 }
 
-.card-title:first-child {
+.card-title h3.another-margin-top {
 	margin-top: clamp(0rem, 2.4427rem + -5.0891vw, 1.25rem);
 }
 
@@ -195,6 +194,7 @@ a:focus {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 130%;
+	background-color: var(--basedColor);
 }
 
 .section p {
@@ -209,15 +209,12 @@ a:focus {
 	text-shadow: 2px 2px var(--basedColor);
 }
 
-.title3 {
-	margin: 20px 0px 10px;
-	background: var(--basedColor);
-}
-
-.title3 h4 {
+h4 {
 	color: var(--background);
 	font-family: var(--font-family);
 	font-weight: 400;
+	margin: 20px 0px 10px;
+	background: var(--basedColor);
 	font-size: 18px;
 	line-height: 130%;
 }
@@ -231,10 +228,6 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-}
-
-.sectionGallery {
-	padding-top: clamp(1.875rem, -1.1069rem + 12.7226vw, 5rem);
 }
 
 .gallery_item {
@@ -254,18 +247,6 @@ a:focus {
 	min-height: 668px;
 }
 
-.footer::before {
-	content: '';
-	position: absolute;
-	top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	width: 25px;
-	height: 25px;
-	margin-left: 330px;
-	border-top: 1px solid var(--basedColor);
-	border-right: 1px solid var(--basedColor);
-}
-
 .footer h2 {
 	color: var(--markedColor);
 	font-family: var(--font-family);
@@ -273,17 +254,6 @@ a:focus {
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
 	text-shadow: 2px 2px var(--basedColor);
-}
-
-.footer::after {
-	content: '';
-	position: absolute;
-	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-	width: 25px;
-	height: 25px;
-	border-bottom: 1px solid var(--basedColor);
-	border-left: 1px solid var(--basedColor);
 }
 
 @media (width >= 768px) {
@@ -309,14 +279,14 @@ a:focus {
 		margin-top: clamp(5.5625rem, 17.8125rem + -19.1406vw, 8.625rem);
 	}
 
-	.sectionWhy,
-	.sectionHow {
+	.section:has(h2.another-margin-top),
+	.section:has(h2.enabled-grid) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		gap: 20px;
 	}
 
-	.sectionWhat .title2 {
+	.section .enother-width {
 		width: 30%;
 	}
 
@@ -402,7 +372,7 @@ a:focus {
 		font-size: 157px;
 	}
 
-	.sectionHow {
+	.section:has(h2.enabled-grid) {
 		grid-template-columns: 1fr 2fr;
 	}
 }
