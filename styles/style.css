@@ -31,6 +31,8 @@ a:focus {
 	display: flex;
 	flex-direction: column;
 	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	height: 100vh;
+	min-height: 668px;
 }
 
 .nav {
@@ -171,8 +173,11 @@ a:focus {
 
 .card-title {
 	margin-top: 20px;
-	margin-bottom: 10px;
 	background: var(--basedColor);
+}
+
+.main p {
+	margin-top: 10px;
 }
 
 .card-title:first-child {
@@ -245,6 +250,7 @@ a:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 	min-height: 668px;
 }
 
