@@ -28,6 +28,7 @@ a:focus {
 	flex-direction: column;
 	height: 100vh;
 	min-height: 668px;
+	margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
@@ -151,13 +152,13 @@ a:focus {
 }
 
 .section {
-	padding-top: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 	padding-right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+	padding-bottom: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 	padding-left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
-.section:has(h2.another-margin-top) {
-	padding-top: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+.section:has(.gallery) {
+	padding-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .section h2 {
@@ -168,7 +169,15 @@ a:focus {
 	line-height: 130%;
 }
 
-.card-title h3 {
+.card-title {
+	margin-bottom: 20px;
+}
+
+.card-title:last-child {
+	margin-bottom: 0;
+}
+
+.grid_component {
 	margin-top: 20px;
 }
 
@@ -176,12 +185,8 @@ a:focus {
 	margin-top: 10px;
 }
 
-.card-title h3.another-margin-top {
-	margin-top: clamp(0rem, 2.4427rem + -5.0891vw, 1.25rem);
-}
-
-.card-title-simple {
-	margin-bottom: 0px;
+.enabled-grid {
+	margin-bottom: 20px;
 }
 
 .card-title h2,
@@ -206,6 +211,10 @@ a:focus {
 	text-shadow: 2px 2px var(--dec-color);
 }
 
+.card-title-gallery {
+	margin-bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+}
+
 h4 {
 	margin: 20px 0px 10px;
 	color: var(--bg-color);
@@ -216,11 +225,6 @@ h4 {
 	background: var(--dec-color);
 }
 
-.card-title-gallery {
-	margin-top: 0px;
-	margin-bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-}
-
 .gallery {
 	display: flex;
 	flex-direction: column;
@@ -229,10 +233,6 @@ h4 {
 
 .gallery_item {
 	width: 100%;
-}
-
-.gallery:last-child {
-	padding-bottom: clamp(2.25rem, 0.8187rem + 6.1069vw, 3.75rem);
 }
 
 .footer {
@@ -272,14 +272,13 @@ h4 {
 		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
 	}
 
-	.section:has(h2.another-margin-top),
 	.section:has(h2.enabled-grid) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		gap: clamp(0.625rem, 3.125rem + -3.9063vw, 1.25rem);
 	}
 
-	.section .another-width {
+	.section:has(.grid) h2 {
 		width: 30%;
 	}
 
