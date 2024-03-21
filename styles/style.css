@@ -1,12 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+	background-color: var(--bg-color);
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	background-image: var(--bg-img);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: var(--bg-color);
 }
 
 a {
@@ -26,9 +26,9 @@ a:focus {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	height: 100vh;
 	min-height: 668px;
+	padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .nav {
@@ -53,12 +53,12 @@ a:focus {
 	align-items: center;
 	gap: 10px;
 	margin: 0px 9px 0px auto;
+	opacity: var(--rec-op);
 	color: var(--dec-color);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 139%;
-	opacity: var(--rec-op);
 }
 
 .rec::after {
@@ -207,13 +207,13 @@ a:focus {
 }
 
 h4 {
+	margin: 20px 0px 10px;
 	color: var(--bg-color);
 	font-family: var(--font-family);
 	font-weight: 400;
-	margin: 20px 0px 10px;
-	background: var(--dec-color);
 	font-size: 18px;
 	line-height: 130%;
+	background: var(--dec-color);
 }
 
 .card-title-gallery {
@@ -280,15 +280,11 @@ h4 {
 	.section:has(h2.enabled-grid) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		gap: 20px;
+		gap: clamp(0.625rem, 3.125rem + -3.9063vw, 1.25rem);
 	}
 
 	.section .enother-width {
 		width: 30%;
-	}
-
-	.grid_component {
-		margin-top: 20px;
 	}
 
 	.gallery {
