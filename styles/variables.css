@@ -5,8 +5,13 @@
 
 :root {
 	--font-family: 'IBM Plex Mono', sans-serif;
-	--background: #000028;
-	--basedColor: #ff0070;
-	--secondaryColor: #f1b2ce;
-	--markedColor: #db00ff;
+	--nav-color: #ff0070;
+	--border-color: rgba(255, 0, 112, 0.4);
+	--rec-op: 100;
+	--dec-color: #ff0070;
+	--bg-img: url(../images/cover-image-dark.png);
+	--gen-color: #db00ff;
+	--bg-color: #000028;
+	--secondary-color: #f1b2ce;
+	--zag-color: #ff0070;
 }

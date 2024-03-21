@@ -9,135 +9,29 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-	--background: #fff1f7;
-	--basedColor: #ff8dcb;
-	--secondaryColor: #353430;
-	--markedColor: #ffc2e6;
-	background-image: url(../images/cover-image-light.png);
-
-	a:hover {
-		border-bottom: 1px solid var(--secondaryColor);
-	}
-
-	a:focus {
-		border: 1px solid var(--secondaryColor);
-		outline-style: none;
-	}
-
-	.decorated-zone::before {
-		border-top: 1px solid var(--secondaryColor);
-		border-right: 1px solid var(--secondaryColor);
-	}
-
-	.decorated-zone::after {
-		border-bottom: 1px solid var(--secondaryColor);
-		border-left: 1px solid var(--secondaryColor);
-	}
-
-	.rec {
-		opacity: 0;
-	}
-
-	.header__theme-menu-button {
-		color: var(--secondaryColor);
-	}
-
-	.header__theme-menu-button_active {
-		border: 1px solid var(--secondaryColor);
-	}
-
-	.header__theme-menu-button:hover {
-		border: 1px solid rgba(50, 49, 45, 0.4);
-	}
-
-	.header__theme-menu-button:focus {
-		border-bottom: 1px solid var(--secondaryColor);
-		outline-style: none;
-	}
-
-	.text p {
-		color: var(--secondaryColor);
-	}
-
-	.section h2 {
-		color: var(--secondaryColor);
-	}
-
-	.card-title h3,
-	.card-title h2 {
-		color: var(--secondaryColor);
-	}
-
-	h4 {
-		color: var(--secondaryColor);
-	}
+	--font-family: 'IBM Plex Mono', sans-serif;
+	--nav-color: #353430;
+	--border-color: rgba(50, 49, 45, 0.4);
+	--rec-op: 0;
+	--dec-color: #ff8dcb;
+	--bg-img: url(../images/cover-image-light.png);
+	--gen-color: #ffc2e6;
+	--bg-color: #000028;
+	--secondary-color: #353430;
+	--zag-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--background: #fff1f7;
-		--basedColor: #ff8dcb;
-		--secondaryColor: #353430;
-		--markedColor: #ffc2e6;
-	}
-	.page {
-		background-image: url(../images/cover-image-light.png);
-	}
-
-	a:hover {
-		border-bottom: 1px solid var(--secondaryColor);
-	}
-
-	a:focus {
-		border: 1px solid var(--secondaryColor);
-		outline-style: none;
-	}
-
-	.decorated-zone::before {
-		border-top: 1px solid var(--secondaryColor);
-		border-right: 1px solid var(--secondaryColor);
-	}
-
-	.decorated-zone::after {
-		border-bottom: 1px solid var(--secondaryColor);
-		border-left: 1px solid var(--secondaryColor);
-	}
-
-	.rec {
-		opacity: 0;
-	}
-
-	.header__theme-menu-button {
-		color: var(--secondaryColor);
-	}
-
-	.header__theme-menu-button_active {
-		border: 1px solid var(--secondaryColor);
-	}
-
-	.header__theme-menu-button:hover {
-		border: 1px solid rgba(50, 49, 45, 0.4);
-	}
-
-	.header__theme-menu-button:focus {
-		border-bottom: 1px solid var(--secondaryColor);
-		outline-style: none;
-	}
-
-	.text p {
-		color: var(--secondaryColor);
-	}
-
-	.title2 h2 {
-		color: var(--secondaryColor);
-	}
-
-	.card-title h3,
-	.card-title h2 {
-		color: var(--secondaryColor);
-	}
-
-	.title3 h4 {
-		color: var(--secondaryColor);
+		--font-family: 'IBM Plex Mono', sans-serif;
+		--nav-color: #353430;
+		--border-color: rgba(50, 49, 45, 0.4);
+		--rec-op: 0;
+		--dec-color: #ff8dcb;
+		--bg-img: url(../images/cover-image-light.png);
+		--gen-color: #ffc2e6;
+		--bg-color: #000028;
+		--secondary-color: #353430;
+		--zag-color: #353430;
 	}
 }

@@ -10,66 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 	--font-family: 'IBM Plex Mono', sans-serif;
-	--background: #000028;
-	--basedColor: #ff0070;
-	--secondaryColor: #f1b2ce;
-	--markedColor: #db00ff;
-	background-image: url(../images/cover-image-dark.png);
-	a:hover {
-		border-bottom: 1px solid var(--secondaryColor);
-	}
-
-	a:focus {
-		border: 1px solid var(--secondaryColor);
-		outline-style: none;
-	}
-
-	.decorated-zone::before {
-		border-top: 1px solid var(--basedColor);
-		border-right: 1px solid var(--basedColor);
-	}
-
-	.decorated-zone::after {
-		border-bottom: 1px solid var(--basedColor);
-		border-left: 1px solid var(--basedColor);
-	}
-
-	.rec,
-	.rec::after {
-		opacity: 100;
-	}
-
-	.header__theme-menu-button {
-		color: var(--basedColor);
-	}
-
-	.header__theme-menu-button_active {
-		border: 1px solid var(--basedColor);
-	}
-
-	.header__theme-menu-button:hover {
-		border: 1px solid rgba(255, 0, 112, 0.4);
-	}
-
-	.header__theme-menu-button:focus {
-		border-bottom: 1px solid var(--basedColor);
-		outline-style: none;
-	}
-
-	.text p {
-		color: var(--background);
-	}
-
-	.section h2 {
-		color: var(--basedColor);
-	}
-
-	.card-title h3,
-	.card-title h2 {
-		color: var(--background);
-	}
-
-	h4 {
-		color: var(--background);
-	}
+	--nav-color: #ff0070;
+	--border-color: rgba(255, 0, 112, 0.4);
+	--rec-op: 100;
+	--dec-color: #ff0070;
+	--bg-img: url(../images/cover-image-dark.png);
+	--gen-color: #db00ff;
+	--bg-color: #000028;
+	--secondary-color: #f1b2ce;
+	--zag-color: #ff0070;
 }

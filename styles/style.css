@@ -2,15 +2,11 @@
 
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-	background-image: url(../images/cover-image-dark.png);
+	background-image: var(--bg-img);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-main,
-footer {
-	background-color: var(--background);
+	background-color: var(--bg-color);
 }
 
 a {
@@ -18,11 +14,11 @@ a {
 }
 
 a:hover {
-	border-bottom: 1px solid var(--secondaryColor);
+	border-bottom: 1px solid var(--secondary-color);
 }
 
 a:focus {
-	border: 1px solid var(--secondaryColor);
+	border: 1px solid var(--secondary-color);
 	outline-style: none;
 }
 
@@ -48,8 +44,8 @@ a:focus {
 	right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
-	border-top: 1px solid var(--basedColor);
-	border-right: 1px solid var(--basedColor);
+	border-top: 1px solid var(--nav-color);
+	border-right: 1px solid var(--nav-color);
 }
 
 .rec {
@@ -57,11 +53,12 @@ a:focus {
 	align-items: center;
 	gap: 10px;
 	margin: 0px 9px 0px auto;
-	color: var(--basedColor);
+	color: var(--dec-color);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 139%;
+	opacity: var(--rec-op);
 }
 
 .rec::after {
@@ -69,9 +66,9 @@ a:focus {
 	width: 9px;
 	height: 9px;
 	border-radius: 50%;
-	box-shadow: 0 0 4px 2px var(--basedColor);
-	fill: var(--basedColor);
-	background-color: var(--basedColor);
+	box-shadow: 0 0 4px 2px var(--dec-color);
+	fill: var(--dec-color);
+	background-color: var(--dec-color);
 }
 
 .header__theme-menu {
@@ -89,7 +86,7 @@ a:focus {
 	min-height: 26px;
 	border: none;
 	padding: 0px 13px;
-	color: var(--basedColor);
+	color: var(--nav-color);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -99,17 +96,17 @@ a:focus {
 }
 
 .header__theme-menu-button:hover {
-	border: 1px solid rgba(255, 0, 112, 0.4);
+	border: 1px solid var(--border-color);
 	cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
-	border-bottom: 1px solid var(--basedColor);
+	border-bottom: 1px solid var(--nav-color);
 	outline-style: none;
 }
 
 .header__theme-menu-button_active {
-	border: 1px solid var(--basedColor);
+	border: 1px solid var(--nav-color);
 	pointer-events: none;
 }
 
@@ -119,23 +116,23 @@ a:focus {
 }
 
 .title h1 {
-	color: var(--markedColor);
+	color: var(--gen-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
-	text-shadow: 4px 4px var(--basedColor);
+	text-shadow: 4px 4px #ff0070;
 }
 
 .text {
 	margin-top: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
 	margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
 	margin-left: clamp(0rem, -21.708rem + 92.6209vw, 22.75rem);
-	background: var(--basedColor);
+	background: var(--dec-color);
 }
 
 .text p {
-	color: var(--background);
+	color: var(--bg-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -149,8 +146,8 @@ a:focus {
 	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
-	border-bottom: 1px solid var(--basedColor);
-	border-left: 1px solid var(--basedColor);
+	border-bottom: 1px solid var(--nav-color);
+	border-left: 1px solid var(--nav-color);
 }
 
 .section {
@@ -164,7 +161,7 @@ a:focus {
 }
 
 .section h2 {
-	color: var(--basedColor);
+	color: var(--zag-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -189,16 +186,16 @@ a:focus {
 
 .card-title h2,
 .card-title h3 {
-	color: var(--background);
+	color: var(--bg-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 130%;
-	background-color: var(--basedColor);
+	background-color: var(--dec-color);
 }
 
 .section p {
-	color: var(--secondaryColor);
+	color: var(--secondary-color);
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 18px;
@@ -206,15 +203,15 @@ a:focus {
 }
 
 .section a {
-	text-shadow: 2px 2px var(--basedColor);
+	text-shadow: 2px 2px var(--dec-color);
 }
 
 h4 {
-	color: var(--background);
+	color: var(--bg-color);
 	font-family: var(--font-family);
 	font-weight: 400;
 	margin: 20px 0px 10px;
-	background: var(--basedColor);
+	background: var(--dec-color);
 	font-size: 18px;
 	line-height: 130%;
 }
@@ -248,12 +245,12 @@ h4 {
 }
 
 .footer h2 {
-	color: var(--markedColor);
+	color: var(--gen-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 	line-height: 83%;
-	text-shadow: 2px 2px var(--basedColor);
+	text-shadow: 2px 2px #ff0070;
 }
 
 @media (width >= 768px) {
