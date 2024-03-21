@@ -132,7 +132,7 @@ a:focus {
 }
 
 .text p {
-	color: var(--bg-color);
+	color: var(--zag-dop-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -142,7 +142,7 @@ a:focus {
 .decorated-zone::after {
 	content: '';
 	position: absolute;
-	bottom: clamp(1.25rem, 0.0573rem + 5.0891vw, 2.5rem);
+	bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 	width: 25px;
 	height: 25px;
@@ -157,7 +157,7 @@ a:focus {
 }
 
 .section:has(h2.another-margin-top) {
-	padding-top: clamp(1.875rem, 1.2786rem + 2.5445vw, 2.5rem);
+	padding-top: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .section h2 {
@@ -186,7 +186,7 @@ a:focus {
 
 .card-title h2,
 .card-title h3 {
-	color: var(--bg-color);
+	color: var(--zag-dop-color);
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 18px;
@@ -224,7 +224,7 @@ h4 {
 .gallery {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 6px;
 }
 
 .gallery_item {
@@ -232,7 +232,7 @@ h4 {
 }
 
 .gallery:last-child {
-	padding-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+	padding-bottom: clamp(2.25rem, 0.8187rem + 6.1069vw, 3.75rem);
 }
 
 .footer {
@@ -272,10 +272,6 @@ h4 {
 		margin-left: clamp(22.75rem, -1.4375rem + 50.3906vw, 30.8125rem);
 	}
 
-	.header::after {
-		margin-top: clamp(5.5625rem, 17.8125rem + -19.1406vw, 8.625rem);
-	}
-
 	.section:has(h2.another-margin-top),
 	.section:has(h2.enabled-grid) {
 		display: grid;
@@ -283,7 +279,7 @@ h4 {
 		gap: clamp(0.625rem, 3.125rem + -3.9063vw, 1.25rem);
 	}
 
-	.section .enother-width {
+	.section .another-width {
 		width: 30%;
 	}
 
